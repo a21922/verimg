@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": false,
   "builds": [
     {
       "src": "package.json",
@@ -12,8 +11,5 @@
       "src": "/api/(.*)",
       "dest": "/api/$1"
     }
-  ],
-  "limits": {
-    "bodySize": "100mb"
-  }
+  ]
 }
