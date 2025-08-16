@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "public": false,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "limits": {
+    "bodySize": "100mb"
+  }
+}
